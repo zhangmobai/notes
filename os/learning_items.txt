@@ -1,0 +1,30 @@
+perf: https://perf.wiki.kernel.org/index.php/Tutorial
+Transparent Hugepages: https://alexandrnikitin.github.io/blog/transparent-hugepages-measuring-the-performance-impact/
+
+network tools:
+ifconfig
+netstat
+ss
+iperf
+netperf
+netserver
+ethtool
+
+
+most useful linux commands:
+ps
+
+
+
+c++
+std::variant
+
+
+Linux:
+vnode layer
+how to know disk throughput
+mmap: man mmap, reader-writer lock
+
+
+storage:
+RAID
