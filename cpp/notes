@@ -1,0 +1,10 @@
+destructor:
+	default is noexcept if certain conditions are met
+
+vector:
+	at checks size and throws out_of_range exception while operator[] doesn't check size and doesn't throw. But operator[] isn't declared noexcept
+	value_type must be erasable. All standard library containers require that their element type satisfies Erasable.
+	there is one specialization, vector<bool>
+	It uses __compressed_pair to store end pointer and allocator. This is to take advantage of empty base optimization if allocator is default. Boost has compressed_pair class.
+	Most modification functions such as push_back, pop_back don't invalidate ALL iterators, only a subset of them.
+	Most modification functions such as push_back, insert, emplace_back, emplace take both lvalue reference type or rvalue reference type.
